@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 05 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .table-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 2fr 1.2fr;
+            grid-template-rows: auto repeat(6, 1fr);
+            flex-grow: 1;
+        }
+
+        .table-header {
+            background-color: #eff6ff;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 24px;
+            color: #2563EB;
+            padding: 0 40px;
+            border-bottom: 2px solid #0F172A;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            min-height: 60px;
+        }
+
+        .table-cell {
+            padding: 0 40px;
+            font-size: 22px;
+            line-height: 1.5;
+            border-bottom: 2px solid #0F172A;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+        }
+
+        .no-right-border {
+            border-right: none !important;
+        }
+
+        .no-bottom-border {
+            border-bottom: none !important;
+        }
+
+        .col-title {
+            font-weight: 600;
+            color: #0F172A;
+        }
+        
+        .unit-tag {
+            font-family: 'Fira Code', monospace;
+            color: #2563EB;
+            margin-right: 12px;
+            background-color: #e2e8f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>六个单元，六次能力升级</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="table-grid">
+                <!-- Headers -->
+                <div class="table-header">单元</div>
+                <div class="table-header">驱动问题</div>
+                <div class="table-header no-right-border">关键产出</div>
+
+                <!-- Row 1 -->
+                <div class="table-cell col-title"><span class="unit-tag">U1</span> 数据侦探的第一步</div>
+                <div class="table-cell">一周记录告诉我什么？</div>
+                <div class="table-cell no-right-border">周数据小报</div>
+
+                <!-- Row 2 -->
+                <div class="table-cell col-title"><span class="unit-tag">U2</span> 让程序替我做选择</div>
+                <div class="table-cell">如何把规则写成可测试程序？</div>
+                <div class="table-cell no-right-border">校园任务助手</div>
+
+                <!-- Row 3 -->
+                <div class="table-cell col-title"><span class="unit-tag">U3</span> 用列表和字典整理生活信息</div>
+                <div class="table-cell">零散记录如何变成可查询数据？</div>
+                <div class="table-cell no-right-border">数据整理器</div>
+
+                <!-- Row 4 -->
+                <div class="table-cell col-title"><span class="unit-tag">U4</span> 从 CSV 到可信表格</div>
+                <div class="table-cell">原始表格如何变成可用数据？</div>
+                <div class="table-cell no-right-border">清洗与统计脚本</div>
+
+                <!-- Row 5 -->
+                <div class="table-cell col-title"><span class="unit-tag">U5</span> 让图表说清楚</div>
+                <div class="table-cell">怎样表达发现而不误导？</div>
+                <div class="table-cell no-right-border">数据故事页</div>
+
+                <!-- Row 6 -->
+                <div class="table-cell col-title no-bottom-border"><span class="unit-tag">U6</span> 我的校园数据微项目</div>
+                <div class="table-cell no-bottom-border">怎样提出负责任的数据建议？</div>
+                <div class="table-cell no-right-border no-bottom-border">小组数据产品</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

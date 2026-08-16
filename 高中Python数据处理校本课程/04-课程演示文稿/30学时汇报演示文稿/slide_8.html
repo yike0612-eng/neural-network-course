@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 08 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 2px solid #0F172A;
+            flex-grow: 1;
+        }
+
+        .col {
+            padding: 30px 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-col {
+            border-right: 2px solid #0F172A;
+        }
+
+        h2 {
+            font-family: 'Fira Code', monospace;
+            font-size: 32px;
+            color: #0F172A;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        h2 span {
+            color: #2563EB;
+        }
+
+        p {
+            font-size: 26px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 8px;
+        }
+
+        li {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            padding-left: 35px;
+            position: relative;
+        }
+
+        li::before {
+            content: "{";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+        }
+
+        .bottom-note {
+            padding: 20px 40px;
+            font-size: 24px;
+            line-height: 1.6;
+            color: #0F172A;
+            background-color: #eff6ff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 160px;
+        }
+
+        .bottom-note strong {
+            color: #2563EB;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>U3—U4 把零散记录变成可信表格</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="split-grid">
+                <div class="col left-col">
+                    <h2><span>[ U3 ]</span> 内存中的批量清洗</h2>
+                    <ul>
+                        <li>用列表、字典、遍历和函数组织多条记录。</li>
+                        <li>完成数据的查询、分类与汇总。</li>
+                        <li>建立“原始数据 → 规则判断 → 清洗/标记 → 质量日志”的闭环。</li>
+                    </ul>
+                </div>
+                
+                <div class="col right-col">
+                    <h2><span>[ U4 ]</span> 真实 CSV 表格处理</h2>
+                    <ul>
+                        <li>从外部 CSV 文件出发，面对更真实的混乱数据。</li>
+                        <li>识别缺失、重复、格式不一致和异常值。</li>
+                        <li>完成数据的筛选与分组统计。</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bottom-note">
+                <p><strong>核心要求：</strong>学生需要提交数据结构图、清洗流程图和数据质量说明，而非只提交脚本。</p>
+                <p>数据处理的质量由问题、字段口径、清洗规则和解释共同决定，<strong>程序能运行不等于结论可靠</strong>。</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

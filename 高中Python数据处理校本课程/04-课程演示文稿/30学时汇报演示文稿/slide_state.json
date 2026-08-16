@@ -1,0 +1,144 @@
+{
+  "project_info": {
+    "title": "Cover",
+    "created": 1786687995.476,
+    "last_updated": 1786688266.332,
+    "total_slides": 12
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "slide_1",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "slide_2",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "slide_3",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "slide_4",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "slide_5",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "slide_6",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "slide_7",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "slide_8",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "slide_9",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "slide_10",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "slide_11",
+      "state": "edited",
+      "pageNum": 12
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "Cover",
+      "summary": "课程名称、适用对象与汇报人信息。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_1",
+      "title": "让学生用程序回答真实问题",
+      "summary": "课程定位：这不是语法课，而是让学生经历“问题→数据→程序→结果→解释与边界”的日常数据处理通识课。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_2",
+      "title": "学完后，学生留下三类可见成果",
+      "summary": "展示三类学生交付物：可运行产品、知识图、反思报告，及其对应的能力证明。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_3",
+      "title": "学习从记忆走向创造",
+      "summary": "说明课程设计依据：结合布鲁姆分类法与尚俊杰教授倡导的学习科学原则，建立低风险、可观察的学习体验。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_4",
+      "title": "30 学时是一条完整的数据处理链",
+      "summary": "展示 6 个单元的递进关系：从基础工具到数据清洗，再到表达创造与期末微项目。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_5",
+      "title": "六个单元，六次能力升级",
+      "summary": "以表格形式概括 U1 到 U6 的驱动问题与关键产出。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_6",
+      "title": "U1 先建立“我能做出来”的体验",
+      "summary": "介绍首个单元《数据侦探的第一步》的主线任务、课堂机制与现有资源完备度。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_7",
+      "title": "U2 让程序按规则做出判断",
+      "summary": "介绍 U2《让程序替我做选择》：从自然语言到代码，学习多分支、测试边界与规则责任。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_8",
+      "title": "U3—U4 把零散记录变成可信表格",
+      "summary": "介绍列表与字典的批量清洗，以及 CSV 真实表格处理中的数据质量与可信度问题。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_9",
+      "title": "U5—U6 让证据走向表达与创造",
+      "summary": "介绍图表表达的防误导训练，以及期末小组数据微项目的要求与答辩标准。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_10",
+      "title": "评价看见过程，也看见责任",
+      "summary": "展示评价构成比例，强调过程性证据、数据责任与可解释性。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "slide_11",
+      "title": "从试教开始，让课程持续生长",
+      "summary": "提出试教首轮验证的四个核心问题，建议以 U1 为起点用真实证据指导后续修订。",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

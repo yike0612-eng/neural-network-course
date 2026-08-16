@@ -1,0 +1,16 @@
+{
+  "stable_threshold": 0.8,
+  "review_threshold": 0.6,
+  "questions": [
+    {"id": "Q1", "answer": "A", "knowledge": "平均数含义", "review_prompt": "用总量除以记录数完成一个小例子。"},
+    {"id": "Q2", "answer": "A", "knowledge": "中位数与异常值", "review_prompt": "排序一组含异常值的数据并比较均值与中位数。"},
+    {"id": "Q3", "answer": "B", "knowledge": "比例分母", "review_prompt": "把孤立百分比改写为带分母的完整句子。"},
+    {"id": "Q4", "answer": "A", "knowledge": "柱状图适用情境", "review_prompt": "用类别—指标—目的三项重新选择图表。"},
+    {"id": "Q5", "answer": "A", "knowledge": "折线图与时间顺序", "review_prompt": "区分有时间顺序和无顺序类别。"},
+    {"id": "Q6", "answer": "A", "knowledge": "图表四要素", "review_prompt": "用标题、横轴、纵轴、单位检查一张图。"},
+    {"id": "Q7", "answer": "A", "knowledge": "截断坐标轴", "review_prompt": "比较同一数据的完整坐标轴和截断坐标轴。"},
+    {"id": "Q8", "answer": "A", "knowledge": "样本范围与边界", "review_prompt": "在比例句中补充样本数和‘不能推断’。"},
+    {"id": "Q9", "answer": "A", "knowledge": "相关与因果", "review_prompt": "把因果断言改成数据支持的观察。"},
+    {"id": "Q10", "answer": "A", "knowledge": "数据故事结构", "review_prompt": "用问题—证据—解释—边界四句重写一页结论。"}
+  ]
+}

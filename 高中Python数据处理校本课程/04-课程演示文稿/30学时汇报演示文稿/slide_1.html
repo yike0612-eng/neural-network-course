@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 01 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            flex-grow: 1;
+        }
+
+        /* reduced inner paddings and spacing to fit within 720px */
+        .column {
+            padding: 40px; /* reduced from 60px */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-col {
+            border-right: 2px solid #0F172A;
+        }
+
+        .highlight-box {
+            border: 2px solid #2563EB;
+            padding: 10px; /* reduced from 30px */
+            margin-top: 10px; /* reduced from 30px */
+            background-color: #eff6ff;
+        }
+
+        .process-flow {
+            font-family: 'Fira Code', monospace;
+            font-size: 24px;
+            color: #2563EB;
+            font-weight: 600;
+            line-height: 1.2; /* reduced from 2 */
+            margin-top: 12px;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #0F172A;
+            margin-bottom: 12px; /* reduced from 20px */
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 12px; /* reduced from 20px */
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 10px; /* reduced from 20px */
+        }
+
+        li {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 10px; /* reduced from 16px */
+            padding-left: 30px;
+            position: relative;
+        }
+
+        li::before {
+            content: "{";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>让学生用程序回答真实问题</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="column left-col">
+                <h2>超越“讲完语法”</h2>
+                <p>这不是一门单纯按章节堆叠 Python 语法的课程，而是一门日常数据处理通识课。</p>
+                <p>学生围绕校园与生活中的低风险问题，经历完整的数据处理链条：</p>
+                
+                <div class="highlight-box">
+                    <div class="process-flow">
+                        问题<br>
+                        ↓ 数据<br>
+                        ↓ 程序<br>
+                        ↓ 结果<br>
+                        ↓ 解释与边界
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column right-col">
+                <h2>核心目标</h2>
+                <p>让每位学生都能做出<strong>清楚、可信且负责任</strong>的数据结论。</p>
+                
+                <ul>
+                    <li>代码是形成证据的工具，而不是课程的终点。</li>
+                    <li>以“图书馆何时更忙”、“一周阅读是否稳定”等真实问题导入。</li>
+                    <li>强调对结果的解释，而非仅关注程序是否能运行。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

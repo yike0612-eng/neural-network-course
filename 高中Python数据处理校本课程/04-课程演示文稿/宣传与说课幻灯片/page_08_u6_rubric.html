@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>六维量规与综合评价</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: #f6f9fc; color: #102b4c; font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+    .head { min-height: 148px; padding-top: 43px; padding-left: 78px; padding-right: 78px; display: flex; justify-content: space-between; }
+    .kicker { color: #168f87; font-size: 16px; font-weight: 800; letter-spacing: 2px; }
+    h1 { margin-top: 14px; font-size: 39px; font-weight: 800; letter-spacing: -1px; }
+    .page { color: #8395a8; font-size: 14px; }
+    .main { display: grid; grid-template-columns: 55% 45%; padding-left: 78px; padding-right: 78px; min-height: 500px; }
+    .left { padding-top: 20px; display: flex; flex-direction: column; align-items: center; }
+    .chart-wrapper { width: 400px; height: 400px; position: relative; }
+    .chart-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+    .chart-center .total { font-size: 42px; font-weight: 800; color: #102b4c; line-height: 1; }
+    .chart-center .label { font-size: 16px; color: #58708b; margin-top: 4px; }
+    .right { padding-top: 40px; padding-left: 40px; display: flex; flex-direction: column; gap: 48px; }
+    .point h2 { font-size: 24px; color: #102b4c; margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+    .point h2::before { content: ""; display: block; width: 6px; height: 24px; background: #168f87; }
+    .point p { font-size: 18px; line-height: 1.65; color: #46617d; }
+    .point .highlight { color: #d89d20; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header class="head"><div><div class="kicker">课程评价</div><h1>六维量规与综合评价</h1></div><div class="page">08 / 10</div></header>
+    <main class="main">
+      <section class="left">
+        <div class="chart-wrapper">
+          <canvas id="rubricChart"></canvas>
+          <div class="chart-center">
+            <div class="total">100%</div>
+            <div class="label">综合评价</div>
+          </div>
+        </div>
+      </section>
+      <section class="right">
+        <div class="point">
+          <h2>评价重点：超越代码与视觉</h2>
+          <p>不以单纯的代码运行成功或图表视觉效果替代对<span class="highlight">数据处理逻辑</span>的评价。强调同伴质询、问题日志的完整性以及依据反馈进行的 P0 级修订。</p>
+        </div>
+        <div class="point">
+          <h2>反馈方式：组级描述性反馈</h2>
+          <p>自动评分器仅用于诊断技术底线。最终结项采用<span class="highlight">组级描述性反馈</span>，结合个人角色复盘，不以自动分数生成个人排名，降低试错风险。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    const ctx = document.getElementById('rubricChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['问题界定 15%', '数据口径与质量 20%', '处理流水线 20%', '证据与表达 20%', '复核与迭代 15%', '数据责任与协作 10%'],
+        datasets: [{
+          data: [15, 20, 20, 20, 15, 10],
+          backgroundColor: [
+            '#2b5c8f',
+            '#168f87',
+            '#55bfb5',
+            '#e9b54f',
+            '#d89d20',
+            '#8395a8'
+          ],
+          borderWidth: 2,
+          borderColor: '#f6f9fc'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        cutout: '70%',
+        plugins: {
+          legend: {
+            position: 'right',
+            labels: {
+              font: { family: '"Microsoft YaHei", sans-serif', size: 15 },
+              color: '#102b4c',
+              padding: 20
+            }
+          },
+          tooltip: { enabled: false }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

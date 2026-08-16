@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 07 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* allow content height to fit its children instead of centering to fill */
+        }
+
+        .left-col {
+            border-right: 2px solid #0F172A;
+            padding: 40px 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* keep content at top */
+        }
+
+        .right-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* place top/bottom side-by-side to reduce total height */
+        }
+
+        .right-top {
+            /* removed large vertical centering */
+            border-bottom: none;
+            border-right: 2px solid #0F172A;
+            padding: 40px 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .right-bottom {
+            padding: 40px 60px;
+            background-color: #eff6ff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        h2 {
+            font-family: 'Fira Code', monospace;
+            font-size: 32px;
+            color: #2563EB;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 26px;
+            line-height: 1.6;
+            color: #0F172A;
+        }
+
+        strong {
+            color: #2563EB;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 26px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            padding-left: 35px;
+            position: relative;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        .bracket-list li::before {
+            content: "[";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+        }
+
+        .brace-list li::before {
+            content: "{";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+        }
+
+        code {
+            font-family: 'Fira Code', monospace;
+            background-color: #f1f5f9;
+            padding: 2px 8px;
+            color: #0F172A;
+            border: 1px solid #cbd5e1;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>U2 让程序按规则做出判断</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="left-col">
+                <h2>[ 核心转换与测试 ]</h2>
+                <ul class="bracket-list">
+                    <li>将自然语言规则转换为布尔表达式、<code>if/elif/else</code>、循环和函数。</li>
+                    <li>通过“校园任务助手”学习边界测试。</li>
+                    <li>检验同一规则在不同输入下是否公平、一致、可解释。</li>
+                </ul>
+            </div>
+            
+            <div class="right-col">
+                <div class="right-top">
+                    <h2>{ 单元产出 }</h2>
+                    <ul class="brace-list">
+                        <li>规则程序（校园任务助手）</li>
+                        <li>决策流程图</li>
+                        <li>“规则是否合理”的反思</li>
+                    </ul>
+                </div>
+                
+                <div class="right-bottom">
+                    <h2>{ 核心理念 }</h2>
+                    <p>U2 不是“多讲几个判断语句”，而是让学生理解自动化系统的<strong>规则来源、边界和责任</strong>。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

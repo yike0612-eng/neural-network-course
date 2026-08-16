@@ -1,0 +1,66 @@
+{
+  "stable_threshold": 0.8,
+  "review_threshold": 0.6,
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "B",
+      "knowledge": "规则可判断性",
+      "review_prompt": "用自然语言规则改写活动，检查是否仍含有模糊词。"
+    },
+    {
+      "id": "Q2",
+      "answer": "B",
+      "knowledge": "比较与赋值",
+      "review_prompt": "用双栏例子复习 = 与 == 的不同用途。"
+    },
+    {
+      "id": "Q3",
+      "answer": "A",
+      "knowledge": "布尔否定",
+      "review_prompt": "使用 True/False 表格，追踪 not task_done 的判断结果。"
+    },
+    {
+      "id": "Q4",
+      "answer": "C",
+      "knowledge": "规则优先级",
+      "review_prompt": "回到规则排序卡，让学生说明第一条规则为何应优先。"
+    },
+    {
+      "id": "Q5",
+      "answer": "B",
+      "knowledge": "边界测试",
+      "review_prompt": "补做 9/10/11 分钟预测—运行—解释练习。"
+    },
+    {
+      "id": "Q6",
+      "answer": "A",
+      "knowledge": "多分支结构",
+      "review_prompt": "比较多个独立 if 与 if/elif/else 的输出数量和顺序。"
+    },
+    {
+      "id": "Q7",
+      "answer": "A",
+      "knowledge": "函数接口",
+      "review_prompt": "用输入—处理—返回表区分参数、return 与 print。"
+    },
+    {
+      "id": "Q8",
+      "answer": "B",
+      "knowledge": "循环处理记录",
+      "review_prompt": "用两条情境记录手动追踪一次循环和函数调用。"
+    },
+    {
+      "id": "Q9",
+      "answer": "C",
+      "knowledge": "组合测试",
+      "review_prompt": "补充至少一组两个条件同时成立的测试用例。"
+    },
+    {
+      "id": "Q10",
+      "answer": "B",
+      "knowledge": "人工判断边界",
+      "review_prompt": "用“程序没有看见什么、谁保留最终判断”句式补写反思。"
+    }
+  ]
+}

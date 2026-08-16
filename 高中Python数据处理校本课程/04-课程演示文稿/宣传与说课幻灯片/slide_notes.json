@@ -1,0 +1,32 @@
+{
+  "page_01_cover": {
+    "note": "Welcome to this presentation on our Python data processing elective course for high school students, titled From Everyday Problems to Responsible Advice. We designed this thirty-hour curriculum not merely to teach programming syntax, but to help students transform raw information into sound, accountable recommendations. Over the next few minutes, we will look at how students learn to handle data, write code, interpret results, and respect clear boundaries."
+  },
+  "page_02_why_this_course": {
+    "note": "When students face real tables or campus issues, knowing how to write code is only half the battle. They often struggle to distinguish between what the data actually says and what they want it to say. By using low-risk daily problems, we shift the focus from rote memorization to building genuine data literacy, ensuring every student can turn a question into a clear, bounded conclusion."
+  },
+  "page_03_course_blueprint": {
+    "note": "Our thirty-hour blueprint unfolds in two distinct phases, moving from basic programming cognition to creative, trusted problem-solving. Students step through foundational coding and problem awareness before advancing to create trusted data products. This structure aligns every activity and assessment so that students grow from simple scripters into critical, evidence-based thinkers."
+  },
+  "page_04_u4_trusted_data": {
+    "note": "Entering our fourth unit, students move from memory records to real comma-separated files, marking the start of our focus on trusted data products. The core challenge here is establishing rigorous processing habits rather than just calculating a number. Students must define cleaning rules before touching code, log data issues transparently, and always account for every single record so that their findings remain fully reproducible."
+  },
+  "page_05_u5_trusted_expression": {
+    "note": "Building directly on our clean data foundations, unit five bridges raw number summaries and responsible evidence expression. We provide multiple learning paths to ensure that technical barriers never block high-order reasoning about charts and statistics. Students learn to use chart contracts and mandatory denominator checks to prevent misleading conclusions and ensure their audience interprets the findings correctly."
+  },
+  "page_06_u6_trusted_action": {
+    "note": "Moving from expression to action, the final unit brings everything together in a small but complete responsible creation. Students don't chase grand topics or complex models here. Instead, we use six strict limits, like one small question and one approved dataset, to keep the project manageable and focused on quality. Over five structured lessons, students freeze their scope, run the green line pipeline, test technical boundaries, build their main chart with a clear story, and face peer interrogation. It is all about turning data skills into trusted, bounded public action. And that sets up how we evaluate this entire journey across different layers."
+  },
+  "page_07_three_evidence_layers": {
+    "note": "Building on that action, we evaluate student work across three distinct layers to ensure true understanding. At the product level, we check technical baselines and make sure the code runs and charts are complete. But code alone isn't enough. We move to the explanation layer to verify data denominators, cleaning rules, and logical tracing. Finally, the responsibility layer guards ethical boundaries, privacy, and cautious recommendations. Automated tools can test the product layer, but they can never replace teacher judgment on interpretation and ethics. This layered evidence feeds directly into our rubric design."
+  },
+  "page_08_u6_rubric": {
+    "note": "When it comes to grading, our six-dimensional rubric looks far beyond simple code execution or visual polish. We focus heavily on problem logs, peer interrogation, and the critical P0 level revisions students make based on feedback. Notice how feedback works here. Automated scripts only diagnose technical baselines. Final grading relies on group-level descriptive feedback and individual reflection, avoiding any personal rankings based on raw automated scores. This lowers trial risk and keeps learning collaborative. To make this happen smoothly, we have prepared a complete curriculum bundle for your classrooms."
+  },
+  "page_09_course_bundle": {
+    "note": "You can start teaching this course tomorrow without worrying about infrastructure or resource gaps. The package includes teacher guides, student workbooks, automated scoring scripts, and desensitized datasets. It runs smoothly in standard Windows computer labs with complete offline support using Python standard libraries. We also back teachers up with minute-by-minute lesson pacing, common misconception alerts, and dual-path prep options. Everything is built to lower your prep burden while maximizing student engagement. And this brings us to the core vision of our entire curriculum."
+  },
+  "page_10_conclusion": {
+    "note": "Ultimately, our vision is simple yet ambitious. We want every student to use Python to turn everyday questions into clear, credible, and bounded data insights. Through trusted data, trusted expression, and trusted action, students learn to navigate information with critical thinking. Thank you for your time, and we look forward to your feedback and trial teaching in your schools."
+  }
+}

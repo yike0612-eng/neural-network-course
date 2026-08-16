@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>产品层、解释层、责任层</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: #f6f9fc; color: #102b4c; font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; display: flex; flex-direction: column; }
+    .head { min-height: 148px; padding-top: 43px; padding-left: 78px; padding-right: 78px; display: flex; justify-content: space-between; }
+    .kicker { color: #168f87; font-size: 16px; font-weight: 800; letter-spacing: 2px; }
+    h1 { margin-top: 14px; font-size: 39px; font-weight: 800; letter-spacing: -1px; }
+    .page { color: #8395a8; font-size: 14px; }
+    
+    .layers { flex: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; padding-left: 78px; padding-right: 78px; padding-top: 20px; }
+    .layer { border-top: 4px solid #102b4c; padding-top: 24px; }
+    .layer:nth-child(1) { border-color: #58708b; }
+    .layer:nth-child(2) { border-color: #168f87; }
+    .layer:nth-child(3) { border-color: #d89d20; }
+    
+    .layer h2 { font-size: 28px; margin-bottom: 16px; }
+    .layer .subtitle { font-size: 16px; color: #536b83; margin-bottom: 24px; min-height: 48px; line-height: 1.5; }
+    
+    .feature-list { list-style: none; }
+    .feature-list li { font-size: 18px; line-height: 1.6; margin-bottom: 16px; padding-left: 20px; position: relative; color: #2c435d; }
+    .feature-list li::before { content: "■"; position: absolute; left: 0; top: 0; font-size: 12px; color: #b8c9d8; }
+    .layer:nth-child(1) .feature-list li::before { color: #58708b; }
+    .layer:nth-child(2) .feature-list li::before { color: #168f87; }
+    .layer:nth-child(3) .feature-list li::before { color: #d89d20; }
+    
+    .footer-note { margin: 40px 78px 50px 78px; background: #ebf7f5; border-left: 6px solid #168f87; padding: 24px 32px; }
+    .footer-note p { font-size: 18px; line-height: 1.6; color: #0c766f; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header class="head">
+      <div>
+        <div class="kicker">评价体系</div>
+        <h1>贯穿全课程的三类证据评价</h1>
+      </div>
+      <div class="page">07 / 10</div>
+    </header>
+    
+    <main class="layers">
+      <section class="layer">
+        <h2>产品层</h2>
+        <p class="subtitle">关注技术底线与完整性<br>“程序能否跑通？”</p>
+        <ul class="feature-list">
+          <li>程序可运行，处理链条完整</li>
+          <li>图表包含标题、坐标轴等必要要素</li>
+          <li>可通过自动评分与验收脚本进行技术底线自检</li>
+        </ul>
+      </section>
+      
+      <section class="layer">
+        <h2>解释层</h2>
+        <p class="subtitle">关注数据口径与逻辑追溯<br>“结果从何而来？”</p>
+        <ul class="feature-list">
+          <li>明确说明数据口径与分母</li>
+          <li>清晰记录清洗规则与问题日志</li>
+          <li>为统计量和图表选择提供合理依据</li>
+        </ul>
+      </section>
+      
+      <section class="layer">
+        <h2>责任层</h2>
+        <p class="subtitle">关注伦理边界与公共影响<br>“结论有何局限？”</p>
+        <ul class="feature-list">
+          <li>不使用敏感个人信息，遵守隐私边界</li>
+          <li>主动进行同伴复核与误导风险检查</li>
+          <li>提供伦理声明，提出低风险的谨慎建议</li>
+        </ul>
+      </section>
+    </main>
+    
+    <footer class="footer-note">
+      <p>评价的立体性：自动工具只能检验产品层的技术底线，绝不能替代教师对解释层（口径合理性）与责任层（建议风险与伦理边界）的人工判断。</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 02 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .table-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            border-bottom: 2px solid #0F172A;
+        }
+
+        .table-header {
+            background-color: #eff6ff;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 28px;
+            color: #2563EB;
+            padding: 20px 40px;
+            border-bottom: 2px solid #0F172A;
+            border-right: 2px solid #0F172A;
+        }
+
+        .table-header:last-child {
+            border-right: none;
+        }
+
+        .table-cell {
+            padding: 30px 40px;
+            font-size: 24px;
+            line-height: 1.6;
+            border-bottom: 2px solid #0F172A;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+        }
+
+        .table-cell:last-child {
+            border-right: none;
+        }
+
+        .table-row:last-child .table-cell {
+            border-bottom: none;
+        }
+
+        .col-title {
+            font-weight: 600;
+            color: #0F172A;
+        }
+
+        .bottom-note {
+            padding: 30px 60px;
+            font-size: 24px;
+            line-height: 1.6;
+            color: #0F172A;
+            background-color: #f8fafc;
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .bottom-note::before {
+            content: "{ 价值 }";
+            font-family: 'Fira Code', monospace;
+            color: #2563EB;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>学完后，学生留下三类可见成果</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="table-grid">
+                <!-- Headers -->
+                <div class="table-header">成果</div>
+                <div class="table-header">学生交付物</div>
+                <div class="table-header">它证明什么</div>
+
+                <!-- Row 1 -->
+                <div class="table-cell col-title">可运行产品</div>
+                <div class="table-cell">数据小报、规则助手、清洗脚本、数据故事。</div>
+                <div class="table-cell">能把任务做出来。</div>
+
+                <!-- Row 2 -->
+                <div class="table-cell col-title">知识图</div>
+                <div class="table-cell">输入—处理—输出图、决策流程图、数据清洗流程图。</div>
+                <div class="table-cell">能把过程讲清楚。</div>
+
+                <!-- Row 3 -->
+                <div class="table-cell col-title" style="border-bottom: none;">反思报告</div>
+                <div class="table-cell" style="border-bottom: none;">调试记录、数据质量说明、结论边界与伦理声明。</div>
+                <div class="table-cell" style="border-bottom: none;">能对结果负责。</div>
+            </div>
+            
+            <div class="bottom-note">
+                三类成果共同避免“只会复制代码”、“只会画图不懂数据”或“只谈概念不做产品”的断裂。
+            </div>
+        </div>
+    </div>
+</body>
+</html>

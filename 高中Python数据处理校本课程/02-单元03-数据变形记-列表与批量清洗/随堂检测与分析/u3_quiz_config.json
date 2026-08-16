@@ -1,0 +1,66 @@
+{
+  "stable_threshold": 0.8,
+  "review_threshold": 0.6,
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "C",
+      "knowledge": "列表与字典结构",
+      "review_prompt": "用数据卡再次区分一条记录的多个字段与多条记录的列表。"
+    },
+    {
+      "id": "Q2",
+      "answer": "A",
+      "knowledge": "键和值",
+      "review_prompt": "用颜色标注 record[\"minutes\"] 中的字典、键和值。"
+    },
+    {
+      "id": "Q3",
+      "answer": "B",
+      "knowledge": "格式标准化",
+      "review_prompt": "补做原始值→去空格/单位→数字的箭头转换练习。"
+    },
+    {
+      "id": "Q4",
+      "answer": "B",
+      "knowledge": "缺失值与零",
+      "review_prompt": "用“未知、零、无效”对照卡讨论哪些值可进入均值。"
+    },
+    {
+      "id": "Q5",
+      "answer": "B",
+      "knowledge": "质量日志",
+      "review_prompt": "追踪一条无效记录，补全 record_id、原始值与原因。"
+    },
+    {
+      "id": "Q6",
+      "answer": "A",
+      "knowledge": "清洗函数接口",
+      "review_prompt": "重画 clean_minutes 的输入、返回值、有效/问题去向图。"
+    },
+    {
+      "id": "Q7",
+      "answer": "A",
+      "knowledge": "循环批量处理",
+      "review_prompt": "用两条记录手动追踪一次循环、函数返回和 append。"
+    },
+    {
+      "id": "Q8",
+      "answer": "B",
+      "knowledge": "记录可追溯性",
+      "review_prompt": "让学生写出原始数、有效数、问题数之间的解释关系。"
+    },
+    {
+      "id": "Q9",
+      "answer": "B",
+      "knowledge": "可信汇总",
+      "review_prompt": "将有效数和问题数设为汇总输出的不可省略字段。"
+    },
+    {
+      "id": "Q10",
+      "answer": "A",
+      "knowledge": "清洗规则边界",
+      "review_prompt": "讨论工具规则、字段口径与人工复核各自的边界。"
+    }
+  ]
+}

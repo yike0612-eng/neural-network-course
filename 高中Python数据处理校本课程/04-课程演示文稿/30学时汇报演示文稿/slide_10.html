@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 10 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .table-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 2.5fr;
+            grid-template-rows: auto repeat(4, 1fr);
+            flex-grow: 1;
+            border-bottom: 2px solid #0F172A;
+        }
+
+        .table-header {
+            background-color: #eff6ff;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 26px;
+            color: #2563EB;
+            padding: 0 40px;
+            border-bottom: 2px solid #0F172A;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            min-height: 70px;
+        }
+
+        .table-cell {
+            padding: 0 40px;
+            font-size: 24px;
+            line-height: 1.5;
+            border-bottom: 2px solid #0F172A;
+            border-right: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+        }
+
+        .no-right-border {
+            border-right: none !important;
+        }
+
+        .no-bottom-border {
+            border-bottom: none !important;
+        }
+
+        .col-title {
+            font-weight: 600;
+            color: #0F172A;
+        }
+
+        .col-percent {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            color: #2563EB;
+            font-size: 28px;
+        }
+
+        .bottom-note {
+            padding: 30px 60px;
+            font-size: 24px;
+            line-height: 1.6;
+            color: #0F172A;
+            background-color: #f8fafc;
+            display: flex;
+            align-items: center;
+            min-height: 120px;
+        }
+
+        .bottom-note::before {
+            content: "{ 导向 }";
+            font-family: 'Fira Code', monospace;
+            color: #2563EB;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>评价看见过程，也看见责任</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="table-grid">
+                <!-- Headers -->
+                <div class="table-header">评价构成</div>
+                <div class="table-header">比例</div>
+                <div class="table-header no-right-border">核心证据</div>
+
+                <!-- Row 1 -->
+                <div class="table-cell col-title">课堂参与与调试档案</div>
+                <div class="table-cell col-percent">20%</div>
+                <div class="table-cell no-right-border">退出卡、预测记录、调试日志、同伴测试。</div>
+
+                <!-- Row 2 -->
+                <div class="table-cell col-title">U1—U5 单元任务</div>
+                <div class="table-cell col-percent">35%</div>
+                <div class="table-cell no-right-border">程序、知识图、反思与数据说明。</div>
+
+                <!-- Row 3 -->
+                <div class="table-cell col-title">U6 数据微项目</div>
+                <div class="table-cell col-percent">35%</div>
+                <div class="table-cell no-right-border">代码、图表、展示、可复现处理流程。</div>
+
+                <!-- Row 4 -->
+                <div class="table-cell col-title no-bottom-border">个人反思与数据责任</div>
+                <div class="table-cell col-percent no-bottom-border">10%</div>
+                <div class="table-cell no-right-border no-bottom-border">数据来源、隐私、偏差与改进说明。</div>
+            </div>
+            
+            <div class="bottom-note">
+                评价不把代码长度或输入速度当作能力；学生要能解释自己的程序与结论，才能获得高等级评价。
+            </div>
+        </div>
+    </div>
+</body>
+</html>

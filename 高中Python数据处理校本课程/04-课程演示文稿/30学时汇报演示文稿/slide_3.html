@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 03 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 2px solid #0F172A;
+            flex-grow: 1;
+        }
+
+        .col {
+            padding: 20px 40px; /* shrunk padding */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-col {
+            border-right: 2px solid #0F172A;
+        }
+
+        h2 {
+            font-family: 'Fira Code', monospace;
+            font-size: 32px;
+            color: #0F172A;
+            margin-bottom: 18px; /* reduced spacing */
+            font-weight: 600;
+        }
+
+        /* arrange steps in two columns to reduce vertical height */
+        .flow-steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 6px;
+        }
+
+        .step {
+            font-size: 26px;
+            font-weight: 600;
+            color: #2563EB;
+            padding: 8px 12px; /* reduced padding */
+            border: 2px solid #2563EB;
+            background-color: #eff6ff;
+            text-align: center;
+        }
+
+        ul.principles {
+            list-style-type: none;
+            margin-top: 6px;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* split into two columns */
+            gap: 12px 24px;
+        }
+
+        ul.principles li {
+            font-size: 26px;
+            line-height: 1.4;
+            margin-bottom: 0; /* handled by gap */
+            padding-left: 24px; /* reduced */
+            position: relative;
+            color: #334155;
+        }
+
+        ul.principles li::before {
+            content: "{";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+        }
+
+        .bottom-note {
+            padding: 20px 40px; /* reduced padding */
+            font-size: 24px;
+            line-height: 1.6;
+            color: #0F172A;
+            background-color: #f8fafc;
+            display: flex;
+            align-items: center;
+            min-height: 120px;
+        }
+
+        .bottom-note::before {
+            content: "{ 实践 }";
+            font-family: 'Fira Code', monospace;
+            color: #2563EB;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>学习从记忆走向创造</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="split-grid">
+                <div class="col left-col">
+                    <h2>[ 布鲁姆进阶 ]</h2>
+                    <div class="flow-steps">
+                        <div class="step">识别与解释</div>
+                        <div class="step">编写与运行</div>
+                        <div class="step">拆解与比较</div>
+                        <div class="step">判断与创造</div>
+                    </div>
+                </div>
+                
+                <div class="col right-col">
+                    <h2>[ 尚俊杰转化 ]</h2>
+                    <ul class="principles">
+                        <li>用真实情境导入问题</li>
+                        <li>鼓励低风险试错</li>
+                        <li>提供及时反馈机制</li>
+                        <li>设计适度挑战任务</li>
+                        <li>促进协作表达与作品迭代</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bottom-note">
+                课程不以积分排名为核心，而让“预测输出、调试闯关、同伴试运行、数据故事会”服务于理解与表达。
+            </div>
+        </div>
+    </div>
+</body>
+</html>

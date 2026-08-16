@@ -1,0 +1,16 @@
+{
+  "stable_threshold": 0.8,
+  "review_threshold": 0.6,
+  "questions": [
+    {"id": "Q1", "answer": "B", "knowledge": "问题界定", "review_prompt": "把一个大愿望改写为带对象、指标和范围的小问题。"},
+    {"id": "Q2", "answer": "A", "knowledge": "数据字典", "review_prompt": "补齐字段含义、类型、单位、空值和边界。"},
+    {"id": "Q3", "answer": "C", "knowledge": "可回答性", "review_prompt": "区分数据能够支持的观察和需要其他证据的问题。"},
+    {"id": "Q4", "answer": "B", "knowledge": "处理流水线", "review_prompt": "画出输入、清洗、计算、图表、解释和复核流程。"},
+    {"id": "Q5", "answer": "A", "knowledge": "最小测试", "review_prompt": "先用少量记录定位字段、规则和口径问题。"},
+    {"id": "Q6", "answer": "A", "knowledge": "证据与建议边界", "review_prompt": "把绝对命令改写为小范围、可试验的建议。"},
+    {"id": "Q7", "answer": "B", "knowledge": "低风险数据", "review_prompt": "使用教学模拟或公开脱敏汇总，排除个人敏感信息。"},
+    {"id": "Q8", "answer": "B", "knowledge": "同伴复核", "review_prompt": "用口径、样本、图表和边界问题审阅作品。"},
+    {"id": "Q9", "answer": "A", "knowledge": "聚焦迭代", "review_prompt": "选择一个P0并写出修改依据和预期效果。"},
+    {"id": "Q10", "answer": "A", "knowledge": "伦理声明", "review_prompt": "补写来源、未使用数据、可能误读和下一步证据。"}
+  ]
+}

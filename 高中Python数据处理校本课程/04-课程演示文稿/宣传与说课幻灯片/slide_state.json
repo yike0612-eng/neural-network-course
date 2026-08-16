@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "title": "从日常问题到负责任的建议",
+    "created": 1786872638.786,
+    "last_updated": 1786872775.361,
+    "total_slides": 10
+  },
+  "slides": [
+    {
+      "id": "page_01_cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "page_02_why_this_course",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "page_03_course_blueprint",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "page_04_u4_trusted_data",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "page_05_u5_trusted_expression",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "page_06_u6_trusted_action",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "page_07_three_evidence_layers",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "page_08_u6_rubric",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "page_09_course_bundle",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "page_10_conclusion",
+      "state": "edited",
+      "pageNum": 10
+    }
+  ],
+  "outline": [
+    {
+      "id": "page_01_cover",
+      "title": "从日常问题到负责任的建议",
+      "summary": "封面页，展示课程标题、适用对象及核心主题。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "page_02_why_this_course",
+      "title": "不仅是编程，更是现代数据素养",
+      "summary": "阐述课程痛点与目标，强调“问题到结论”的完整链路。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "page_03_course_blueprint",
+      "title": "课程总体蓝图：从认知到创造",
+      "summary": "展示30学时、6个单元的结构与布鲁姆认知进阶。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "page_04_u4_trusted_data",
+      "title": "U4：数据能不能进入分析？",
+      "summary": "介绍U4的核心规范：清洗规则、问题日志与记录去向。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "page_05_u5_trusted_expression",
+      "title": "U5：分析结果能否被正确理解？",
+      "summary": "介绍U5的桥梁作用：图表合同、分母说明与误导检查。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "page_06_u6_trusted_action",
+      "title": "U6：小而完整的责任性创造",
+      "summary": "展示U6的六项限额与五课时节奏，强调可驾驭的最小产品。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "page_07_three_evidence_layers",
+      "title": "产品层、解释层、责任层",
+      "summary": "介绍贯穿全课程的三类证据评价体系。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "page_08_u6_rubric",
+      "title": "六维量规与综合评价",
+      "summary": "展示U6结项项目的权重分配与组级反馈机制。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "page_09_course_bundle",
+      "title": "完整配套，即刻开课",
+      "summary": "展示课程大礼包的丰富资源与低门槛实施条件。",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "page_10_conclusion",
+      "title": "让数据成为看见世界的可靠透镜",
+      "summary": "结语页，回顾愿景，呼吁试教与交流。",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>U4：数据能不能进入分析？</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: #f6f9fc; color: #102b4c; font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+    .head { min-height: 148px; padding-top: 43px; padding-left: 78px; padding-right: 78px; display: flex; justify-content: space-between; }
+    .kicker { color: #168f87; font-size: 16px; font-weight: 800; letter-spacing: 2px; }
+    h1 { margin-top: 14px; font-size: 39px; font-weight: 800; letter-spacing: -1px; }
+    .page { color: #8395a8; font-size: 14px; }
+    .main { min-height: 500px; padding-left: 78px; padding-right: 78px; display: grid; grid-template-columns: 38% 62%; gap: 60px; padding-top: 20px; }
+    .left { border-top: 4px solid #102b4c; padding-top: 30px; }
+    .left h2 { font-size: 28px; line-height: 1.4; margin-bottom: 24px; color: #102b4c; }
+    .left p { font-size: 18px; line-height: 1.7; color: #46617d; margin-bottom: 20px; }
+    .highlight-box { background: #ebf7f5; border-left: 6px solid #168f87; padding: 24px; margin-top: 40px; }
+    .highlight-box p { margin: 0; font-size: 17px; color: #0c766f; font-weight: 700; }
+    .right { display: flex; flex-direction: column; gap: 30px; padding-top: 10px; }
+    .norm-item { display: grid; grid-template-columns: 60px auto; gap: 24px; }
+    .norm-icon { width: 60px; height: 60px; background: #102b4c; color: #ffffff; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; }
+    .norm-content h3 { font-size: 22px; color: #102b4c; margin-bottom: 12px; }
+    .norm-content p { font-size: 16px; line-height: 1.6; color: #536b83; }
+    .norm-item:nth-child(2) .norm-icon { background: #168f87; }
+    .norm-item:nth-child(3) .norm-icon { background: #e0a62e; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header class="head">
+      <div>
+        <div class="kicker">可信数据产品起点</div>
+        <h1>U4：数据能不能进入分析？</h1>
+      </div>
+      <div class="page">04 / 10</div>
+    </header>
+    <main class="main">
+      <section class="left">
+        <h2>从内存记录走向<br>真实文件 (CSV)</h2>
+        <p>U4 是课程后半程的起点。学生第一次面对具有现实特征的表格数据，关键不再是“算出一个数”，而是建立数据处理的规范。</p>
+        <p>把“错误”转化为可讨论的规则判断，为后续的图表表达和项目建议奠定底座。</p>
+        <div class="highlight-box">
+          <p>“先看字段，再读记录；先写清洗规则，再运行代码；先说明记录数，再解释统计量。”</p>
+        </div>
+      </section>
+      <section class="right">
+        <div class="norm-item">
+          <div class="norm-icon">1</div>
+          <div class="norm-content">
+            <h3>清洗规则先于代码</h3>
+            <p>缺失值不等于零，文本数字不等于可计算数字，潜在重复不等于可以直接删除。在编写代码前，必须先明确字段口径和清洗规则。</p>
+          </div>
+        </div>
+        <div class="norm-item">
+          <div class="norm-icon">2</div>
+          <div class="norm-content">
+            <h3>保留问题日志</h3>
+            <p>原始记录不可覆盖。清洗过程中发现的空值、无效文本或异常数值，必须进入问题日志，并保留记录位置、原始值和原因，留下证据。</p>
+          </div>
+        </div>
+        <div class="norm-item">
+          <div class="norm-icon">3</div>
+          <div class="norm-content">
+            <h3>说明记录去向</h3>
+            <p>清洗完成后，必须报告原始行数、有效行数和问题行数。任何分组汇总的平均值，都必须连同有效记录数（分母）一起报告，确保结果可复核。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

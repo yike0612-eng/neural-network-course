@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 06 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            flex-grow: 1;
+        }
+
+        /* reduced vertical padding to lower total height */
+        .column {
+            padding: 36px 60px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-col {
+            border-right: 2px solid #0F172A;
+        }
+
+        h2 {
+            font-family: 'Fira Code', monospace;
+            font-size: 32px;
+            color: #2563EB;
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .flow-box {
+            border: 2px solid #0F172A;
+            padding: 20px;
+            margin-bottom: 24px;
+            background-color: #f8fafc;
+            font-family: 'Fira Code', monospace;
+            font-size: 20px;
+            color: #0F172A;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        li::before {
+            content: "{";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>U1 先建立“我能做出来”的体验</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="column left-col">
+                <h2>5 学时主线任务</h2>
+                
+                <div class="flow-box">
+                    数据问题与边界<br>
+                    ↓ 变量<br>
+                    ↓ 条件<br>
+                    ↓ 循环<br>
+                    ↓ 周数据小报
+                </div>
+                
+                <p>学生用模拟的阅读、运动或番茄钟记录，计算总量、平均值和达标天数。</p>
+            </div>
+            
+            <div class="column right-col">
+                <h2>课堂机制与资源</h2>
+                
+                <ul>
+                    <li><strong>课堂机制：</strong><br>“先预测、再运行；先手算、再循环；先试运行、再发布”。</li>
+                    <li><strong>资源就绪：</strong><br>已包含教师指导书、学生学习单、起始代码、参考实现、调试卡与评价量规。</li>
+                    <li><strong>部署要求：</strong><br>代码可在普通离线 Windows 机房直接运行，无需复杂环境配置。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

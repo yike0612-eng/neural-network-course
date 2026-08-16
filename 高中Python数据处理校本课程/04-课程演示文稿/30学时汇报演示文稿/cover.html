@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            /* reduce top row proportion to fit within min-height 720 */
+            grid-template-rows: 2fr 1fr;
+            border: 2px solid #0F172A;
+            position: relative;
+        }
+        
+        /* shrink inner padding to lower total required height */
+        .grid-cell {
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cell-top-left {
+            border-right: 2px solid #0F172A;
+            border-bottom: 2px solid #0F172A;
+            justify-content: flex-end;
+        }
+
+        .cell-top-right {
+            border-bottom: 2px solid #0F172A;
+            background-color: #f8fafc;
+            align-items: center;
+            font-family: 'Fira Code', monospace;
+            font-size: 120px;
+            color: #2563EB;
+            font-weight: 600;
+        }
+
+        .cell-bottom-left {
+            border-right: 2px solid #0F172A;
+        }
+
+        .cell-bottom-right {
+            justify-content: center;
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 72px;
+            color: #0F172A;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #2563EB;
+        }
+
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 32px;
+            color: #334155;
+            line-height: 1.5;
+        }
+
+        .meta-info {
+            font-family: 'Fira Code', monospace;
+            font-size: 24px;
+            color: #0F172A;
+            line-height: 1.8;
+        }
+
+        .bracket-decor {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: 'Fira Code', monospace;
+            font-size: 24px;
+            color: #2563EB;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="bracket-decor">{ data_course_v1 }</div>
+        
+        <div class="grid-cell cell-top-left">
+            <h1>用 <span>Python</span><br>读懂日常数据</h1>
+        </div>
+        
+        <div class="grid-cell cell-top-right">
+            <!-- removed large decorative number to avoid expanding the top row -->
+        </div>
+        
+        <div class="grid-cell cell-bottom-left">
+            <h2>高一、高二 30 学时校本课程设计与试教方案</h2>
+        </div>
+        
+        <div class="grid-cell cell-bottom-right">
+            <div class="meta-info">
+                学校/教研组名称<br>
+                汇报人：xxx<br>
+                2026-08-14
+            </div>
+        </div>
+    </div>
+</body>
+</html>

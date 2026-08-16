@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 48px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 09 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-bottom: 2px solid #0F172A;
+            flex-grow: 1;
+        }
+
+        .col {
+            padding: 36px 48px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-col {
+            border-right: 2px solid #0F172A;
+        }
+
+        h2 {
+            font-family: 'Fira Code', monospace;
+            font-size: 32px;
+            color: #0F172A;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 26px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+            padding-left: 35px;
+            position: relative;
+            color: #334155;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        li::before {
+            content: "{";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+        }
+
+        .highlight-text {
+            font-weight: 600;
+            color: #2563EB;
+        }
+
+        .bottom-note {
+            padding: 24px 48px;
+            font-size: 24px;
+            line-height: 1.6;
+            color: #0F172A;
+            background-color: #eff6ff;
+            display: flex;
+            align-items: center;
+            min-height: 96px;
+        }
+
+        .bottom-note::before {
+            content: "{ 核心 }";
+            font-family: 'Fira Code', monospace;
+            color: #2563EB;
+            margin-right: 16px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>U5—U6 让证据走向表达与创造</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="split-grid">
+                <div class="col left-col">
+                    <h2>[ U5：让图表说清楚 ]</h2>
+                    <ul>
+                        <li>比较均值、中位数与比例，根据数据特征<span class="highlight-text">选择合适图表</span>。</li>
+                        <li>识别截断坐标、样本不足等<span class="highlight-text">可能造成误导</span>的视觉表达。</li>
+                        <li>学习怎样客观地表达发现，而不是用图表夸大结论。</li>
+                    </ul>
+                </div>
+                
+                <div class="col right-col">
+                    <h2>[ U6：校园数据微项目 ]</h2>
+                    <ul>
+                        <li>小组围绕一个低风险校园议题，完成<span class="highlight-text">数据字典、处理脚本、数据故事页</span>和展示答辩。</li>
+                        <li>每项建议必须明确说清：“证据是什么、边界是什么、下一步还需要什么数据”。</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bottom-note">
+                数据可视化不是装饰；期末项目考查可信表达与责任，而不只评漂亮图表。
+            </div>
+        </div>
+    </div>
+</body>
+</html>

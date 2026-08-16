@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container { 
+            width: 1280px; 
+            min-height: 720px; 
+            background: #FFFFFF; 
+            font-family: 'Inter', sans-serif;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #0F172A;
+        }
+        
+        .header {
+            min-height: 140px;
+            border-bottom: 2px solid #0F172A;
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            background-color: #f8fafc;
+        }
+
+        h1 {
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 48px;
+            color: #0F172A;
+        }
+
+        h1::before {
+            content: "[ 04 ] ";
+            color: #2563EB;
+        }
+
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .flow-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            border-bottom: 2px solid #0F172A;
+            background-color: #eff6ff;
+        }
+
+        .flow-step {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-right: 2px solid #0F172A;
+            position: relative;
+        }
+
+        .flow-step:last-child {
+            border-right: none;
+        }
+
+        .step-id {
+            font-family: 'Fira Code', monospace;
+            font-size: 36px;
+            font-weight: 600;
+            color: #2563EB;
+            margin-bottom: 16px;
+        }
+
+        .step-desc {
+            font-size: 22px;
+            font-weight: 600;
+            color: #0F172A;
+            line-height: 1.4;
+        }
+
+        .arrow {
+            position: absolute;
+            right: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: 'Fira Code', monospace;
+            font-size: 24px;
+            color: #0F172A;
+            background: #eff6ff;
+            z-index: 10;
+        }
+
+        .flow-step:last-child .arrow {
+            display: none;
+        }
+
+        .text-section {
+            padding: 50px 60px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 26px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        li::before {
+            content: "{";
+            position: absolute;
+            left: 0;
+            color: #2563EB;
+            font-family: 'Fira Code', monospace;
+            font-weight: 600;
+            font-size: 28px;
+        }
+
+        strong {
+            color: #0F172A;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1>30 学时是一条完整的数据处理链</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="flow-grid">
+                <div class="flow-step">
+                    <div class="step-id">U1</div>
+                    <div class="step-desc">读懂问题</div>
+                    <div class="arrow">></div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-id">U2</div>
+                    <div class="step-desc">写出规则</div>
+                    <div class="arrow">></div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-id">U3</div>
+                    <div class="step-desc">整理记录</div>
+                    <div class="arrow">></div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-id">U4</div>
+                    <div class="step-desc">清洗表格</div>
+                    <div class="arrow">></div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-id">U5</div>
+                    <div class="step-desc">解释图表</div>
+                    <div class="arrow">></div>
+                </div>
+                <div class="flow-step">
+                    <div class="step-id">U6</div>
+                    <div class="step-desc">完成微项目</div>
+                </div>
+            </div>
+            
+            <div class="text-section">
+                <ul>
+                    <li>每个单元 5 学时，共 6 个单元；<strong>前四单元</strong>建立工具与证据能力，<strong>后两单元</strong>强化表达、判断与创造。</li>
+                    <li>每个单元均有<strong>基础任务、选做任务与挑战任务</strong>，保证高一、高二混合实施时的可达性和可伸展性。</li>
+                    <li>U6 不再堆叠新语法，而是<strong>整合已学能力</strong>完成一件小组数据产品。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

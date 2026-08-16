@@ -1,0 +1,16 @@
+{
+  "stable_threshold": 0.8,
+  "review_threshold": 0.6,
+  "questions": [
+    {"id": "Q1", "answer": "B", "knowledge": "CSV字段结构", "review_prompt": "重新标注首行字段与后续记录。"},
+    {"id": "Q2", "answer": "A", "knowledge": "DictReader记录", "review_prompt": "用一行CSV对照一个字典记录。"},
+    {"id": "Q3", "answer": "A", "knowledge": "字段类型转换", "review_prompt": "打印字段值和type，比较字符串与整数。"},
+    {"id": "Q4", "answer": "B", "knowledge": "缺失值处理", "review_prompt": "补做未知、零、无效三类值的规则表。"},
+    {"id": "Q5", "answer": "B", "knowledge": "重复与唯一规则", "review_prompt": "比较不同唯一键，说明何时只能人工复核。"},
+    {"id": "Q6", "answer": "A", "knowledge": "文本标准化", "review_prompt": "完成原始文本→去空格→数字转换箭头练习。"},
+    {"id": "Q7", "answer": "B", "knowledge": "清洗前后记录数", "review_prompt": "补全有效数、问题数与原始数的去向表。"},
+    {"id": "Q8", "answer": "A", "knowledge": "条件筛选", "review_prompt": "先圈有效记录，再按字段条件筛选。"},
+    {"id": "Q9", "answer": "A", "knowledge": "分组汇总口径", "review_prompt": "在汇总表中增加每组有效记录数和分母。"},
+    {"id": "Q10", "answer": "B", "knowledge": "证据与边界表达", "review_prompt": "用‘这组已清洗模拟记录’限定结论。"}
+  ]
+}

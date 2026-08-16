@@ -1,0 +1,18 @@
+{
+  "stable_threshold": 0.8,
+  "review_threshold": 0.6,
+  "questions": [
+    {
+      "id": "Q1",
+      "answer": "B",
+      "knowledge": "示例知识点",
+      "review_prompt": "检查题干是否清楚，并安排一项预测、手算或同伴解释活动。"
+    },
+    {
+      "id": "Q2",
+      "answer": "A",
+      "knowledge": "示例知识点",
+      "review_prompt": "检查学生是否有足够机会将概念与程序行为对应起来。"
+    }
+  ]
+}

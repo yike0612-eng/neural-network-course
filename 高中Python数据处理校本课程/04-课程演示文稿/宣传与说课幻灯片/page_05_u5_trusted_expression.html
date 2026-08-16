@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>U5：分析结果能否被正确理解？</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: #f6f9fc; color: #102b4c; font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+    .head { min-height: 148px; padding-top: 43px; padding-left: 78px; padding-right: 78px; display: flex; justify-content: space-between; }
+    .kicker { color: #168f87; font-size: 16px; font-weight: 800; letter-spacing: 2px; }
+    h1 { margin-top: 14px; font-size: 39px; font-weight: 800; letter-spacing: -1px; }
+    .page { color: #8395a8; font-size: 14px; }
+    
+    .main { display: grid; grid-template-columns: 40% 60%; padding-left: 78px; padding-right: 78px; min-height: 500px; gap: 60px; }
+    
+    .left-col { padding-top: 20px; }
+    .bridge-box { border-top: 4px solid #102b4c; padding-top: 24px; margin-bottom: 40px; }
+    .bridge-box h2 { font-size: 26px; margin-bottom: 16px; color: #102b4c; }
+    .bridge-box p { font-size: 18px; line-height: 1.6; color: #46617d; }
+    
+    .highlight-box { background: #ebf7f5; border-left: 6px solid #168f87; padding: 24px; }
+    .highlight-box h3 { font-size: 20px; color: #0c766f; margin-bottom: 12px; }
+    .highlight-box p { font-size: 16px; line-height: 1.6; color: #2a5a56; }
+    
+    .right-col { padding-top: 20px; display: flex; flex-direction: column; gap: 24px; }
+    .tool-item { border: 1px solid #c8d6e3; padding: 24px 32px; display: flex; flex-direction: column; justify-content: center; }
+    .tool-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; }
+    .tool-icon { width: 40px; height: 40px; background: #102b4c; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px; }
+    .tool-title { font-size: 22px; font-weight: 700; color: #102b4c; }
+    .tool-desc { font-size: 16px; line-height: 1.6; color: #536b83; margin-left: 56px; }
+    .tool-item:nth-child(2) .tool-icon { background: #168f87; }
+    .tool-item:nth-child(3) .tool-icon { background: #d89d20; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header class="head">
+      <div>
+        <div class="kicker">表达可信</div>
+        <h1>U5：分析结果能否被正确理解？</h1>
+      </div>
+      <div class="page">05 / 10</div>
+    </header>
+    
+    <main class="main">
+      <section class="left-col">
+        <div class="bridge-box">
+          <h2>关键桥梁作用</h2>
+          <p>U5 实现了从“数字汇总”走向“证据表达”的跨越。重点不在于炫技画图，而在于负责任的解释，避免用一张图替数据作过度结论。</p>
+        </div>
+        <div class="highlight-box">
+          <h3>公平的多路径设计</h3>
+          <p>提供<strong>代码绘图</strong>与<strong>预制图分析</strong>双路径。无论设备环境如何，均评价同一份“图表合同”，不因技术门槛牺牲高阶的解释与责任任务。</p>
+        </div>
+      </section>
+      
+      <section class="right-col">
+        <div class="tool-item">
+          <div class="tool-header">
+            <div class="tool-icon">1</div>
+            <div class="tool-title">图表合同 (Chart Contract)</div>
+          </div>
+          <div class="tool-desc">明确图表要回答的问题、数据范围与图表类型选择理由。确保图表与问题、数据和读者需要严格对应。</div>
+        </div>
+        
+        <div class="tool-item">
+          <div class="tool-header">
+            <div class="tool-icon">2</div>
+            <div class="tool-title">分母说明 (Denominator)</div>
+          </div>
+          <div class="tool-desc">解释统计量背后的基数与有效记录口径，防止孤立的百分比或绝对值对读者造成误导。</div>
+        </div>
+        
+        <div class="tool-item">
+          <div class="tool-header">
+            <div class="tool-icon">3</div>
+            <div class="tool-title">误导检查 (Misleading Check)</div>
+          </div>
+          <div class="tool-desc">识别截断坐标、比例失真、样本不足以及相关与因果的混淆，并要求学生写出具体的修正说明。</div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

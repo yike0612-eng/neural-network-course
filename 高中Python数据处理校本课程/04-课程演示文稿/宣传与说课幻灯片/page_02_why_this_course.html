@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>不仅是编程，更是现代数据素养</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; }
+    .slide-container { width: 1280px; min-height: 720px; background: #f6f9fc; color: #102b4c; font-family: "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; }
+    .topline { min-height: 100px; padding-top: 42px; padding-left: 78px; padding-right: 78px; display: flex; align-items: flex-start; justify-content: space-between; }
+    .section { color: #168f87; font-size: 16px; font-weight: 800; letter-spacing: 2px; }
+    .page { color: #8395a8; font-size: 14px; }
+    .main { min-height: 532px; display: grid; grid-template-columns: 48% 52%; padding-left: 78px; padding-right: 78px; }
+    .left { padding-top: 36px; padding-right: 46px; }
+    h1 { font-size: 43px; line-height: 1.28; letter-spacing: -1px; font-weight: 800; }
+    .lead { margin-top: 24px; color: #46617d; max-width: 485px; font-size: 20px; line-height: 1.72; }
+    .em { color: #168f87; font-weight: 800; }
+    .right { padding-top: 20px; display: flex; flex-direction: column; }
+    .band { min-height: 132px; display: grid; grid-template-columns: 112px auto; align-items: center; border-top: 1px solid #c8d6e3; }
+    .band:last-child { border-bottom: 1px solid #c8d6e3; }
+    .num { font-size: 43px; line-height: 1; font-weight: 800; color: #d6e3ec; letter-spacing: -2px; }
+    .band h2 { font-size: 21px; color: #102b4c; margin-bottom: 8px; }
+    .band p { font-size: 16px; line-height: 1.58; color: #536b83; max-width: 485px; }
+    .band:nth-child(2) .num { color: #55bfb5; }
+    .band:nth-child(3) .num { color: #e9b54f; }
+    .chain { min-height: 88px; margin-left: 78px; margin-right: 78px; border-top: 3px solid #102b4c; display: flex; align-items: center; justify-content: space-between; }
+    .chain span { font-size: 17px; color: #102b4c; font-weight: 700; }
+    .chain b { color: #e0a62e; font-size: 20px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <header class="topline"><div class="section">课程价值</div><div class="page">02 / 10</div></header>
+    <main class="main">
+      <section class="left">
+        <h1>不仅是编程，<br>更是<span class="em">现代数据素养</span></h1>
+        <p class="lead">当学生面对一张真实表格、一幅醒目图表或一个校园议题时，真正需要的不只是写出几行代码，而是知道：数据说明了什么，又不能说明什么。</p>
+      </section>
+      <section class="right">
+        <div class="band"><div class="num">01</div><div><h2>常见困境</h2><p>会背语法，却不知道如何处理原始表格；会画图，却容易把一次观察说成确定结论。</p></div></div>
+        <div class="band"><div class="num">02</div><div><h2>课程转向</h2><p>以日常低风险问题为入口，让学生把 Python 当作形成、检验和表达证据的工具。</p></div></div>
+        <div class="band"><div class="num">03</div><div><h2>最终表现</h2><p>每位学生都能把一个日常问题处理成清楚、可信且有边界的数据结论。</p></div></div>
+      </section>
+    </main>
+    <footer class="chain"><span>问题</span><b>→</b><span>数据</span><b>→</b><span>程序</span><b>→</b><span>结果</span><b>→</b><span>解释与边界</span></footer>
+  </div>
+</body>
+</html>
