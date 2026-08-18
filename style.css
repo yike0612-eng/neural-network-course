@@ -367,3 +367,161 @@ footer {
     gap: 10px;
   }
 }
+
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 6px;
+}
+
+.status-badge {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  border: 1px solid rgba(29, 168, 160, 0.35);
+  border-radius: 999px;
+  background: rgba(29, 168, 160, 0.1);
+  color: #006b66;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.coach-intro,
+.integration-note {
+  color: var(--ink-soft);
+}
+
+.coach-layout {
+  display: grid;
+  grid-template-columns: 0.84fr 1.16fr;
+  gap: 18px;
+  align-items: start;
+  margin-top: 18px;
+}
+
+.coach-label {
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.question-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.question-chips button,
+.text-btn {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.74);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.question-chips button {
+  padding: 7px 10px;
+  text-align: left;
+}
+
+.question-chips button:hover,
+.question-chips button:focus-visible,
+.text-btn:hover,
+.text-btn:focus-visible {
+  border-color: rgba(255, 107, 44, 0.65);
+  color: #c94818;
+  outline: none;
+}
+
+.text-btn {
+  margin-top: 14px;
+  padding: 8px 12px;
+  color: #006b66;
+  font-weight: 700;
+}
+
+.coach-card {
+  padding: 16px;
+  border: 1px solid rgba(29, 168, 160, 0.3);
+  border-radius: 14px;
+  background: rgba(250, 255, 254, 0.72);
+}
+
+.coach-card form > label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+
+.coach-form-row {
+  display: flex;
+  gap: 8px;
+}
+
+.coach-form-row input {
+  min-width: 0;
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+}
+
+.coach-form-row input:focus {
+  border-color: var(--accent-2);
+  outline: 3px solid rgba(29, 168, 160, 0.14);
+}
+
+.coach-response {
+  min-height: 114px;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-left: 4px solid var(--accent-2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink-soft);
+}
+
+.coach-response p {
+  margin: 0;
+}
+
+.coach-response p + p {
+  margin-top: 8px;
+}
+
+.coach-question {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.integration-note {
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 640px) {
+  .section-heading,
+  .coach-form-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .coach-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .coach-form-row .btn {
+    width: 100%;
+  }
+}

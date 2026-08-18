@@ -18,6 +18,7 @@
       <a href="#concept">核心概念</a>
       <a href="#lab">神经元实验室</a>
       <a href="#train">训练原理</a>
+      <a href="#coach">学习助教</a>
       <a href="#quiz">小测验</a>
     </nav>
   </header>
@@ -131,6 +132,44 @@
           </article>
         </div>
       </div>
+    </section>
+
+    <!-- 离线学习助教 -->
+    <section id="coach" class="panel coach-panel">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">Local Learning Mode</span>
+          <h2>4. 课程学习助教</h2>
+        </div>
+        <span class="status-badge">本地运行 · 未连接模型</span>
+      </div>
+      <p class="coach-intro">没有 API Key 也可以使用。助教会根据本课的神经元、激活函数与梯度下降知识点给出提示；输入内容只在当前浏览器页面中处理。</p>
+      <div class="coach-layout">
+        <div>
+          <p class="coach-label">试试这些问题</p>
+          <div class="question-chips" aria-label="快捷问题">
+            <button type="button" data-coach-question="什么是神经元？">什么是神经元？</button>
+            <button type="button" data-coach-question="激活函数有什么作用？">激活函数有什么作用？</button>
+            <button type="button" data-coach-question="为什么要沿负梯度更新？">为什么要沿负梯度更新？</button>
+            <button type="button" data-coach-question="如何避免过拟合？">如何避免过拟合？</button>
+          </div>
+          <button id="explain-current-lab" class="text-btn" type="button">解读当前实验参数</button>
+        </div>
+        <div class="coach-card">
+          <form id="coach-form">
+            <label for="coach-input">向助教提问</label>
+            <div class="coach-form-row">
+              <input id="coach-input" type="text" autocomplete="off" placeholder="例如：ReLU 为什么会输出 0？">
+              <button class="btn" type="submit">获得提示</button>
+            </div>
+          </form>
+          <div id="coach-response" class="coach-response" aria-live="polite">
+            <p class="coach-question">离线助教已就绪</p>
+            <p>从快捷问题开始，或输入你在本课中遇到的疑问。</p>
+          </div>
+        </div>
+      </div>
+      <p class="integration-note"><strong>未来接入说明：</strong>若以后配置服务端密钥，可将此区域接入模型服务；密钥不应写入浏览器脚本或公开仓库。</p>
     </section>
 
     <!-- 小测验 -->
